@@ -1,4 +1,7 @@
 #include <iostream>
+#include <stdio.h>
+#include <cstdlib>
+
 
 using namespace std;
 
@@ -53,11 +56,14 @@ int main()
 
         case 5: //instrukcja pod numerem 41
 
-            exit(0)
+            exit(0);
         break;
         default: //w pozosta³ych przypadkach
         cout<<"Nie ma takiej opcji w menu!";
         }
+        getchar();
+        getchar();
+        system("cls");
     }
     return 0;
 }

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 
 using namespace std;
 int nr_miesiaca;
@@ -6,8 +7,12 @@ int nr_miesiaca;
 int main()
 {
     cout << "Podaj nr miesiaca: " ;
-    cin >> nr_miesiaca;
-
+    if (!(cin >> nr_miesiaca))//sprawdzenie b³êdnych danych wejœciowych
+    //uwaga zostawia liczbe je¿eli podamy np. 4e
+    {
+        cerr<<"To nie jest liczba!";  //cerr-console errors, sprawdzenie b³êdnych danych wejœciowych
+        exit(0);
+    }
     switch(nr_miesiaca)
     {
           case 1: //wykoanie wszystkich wyborow do break

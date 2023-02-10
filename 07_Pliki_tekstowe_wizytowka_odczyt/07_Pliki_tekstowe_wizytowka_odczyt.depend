@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1675865463 source:d:\programowanie\c_plus_plus\podstawy\07_pliki_tekstowe_wizytowka_odczyt\main.cpp
+	<iostream>
+	<fstream>
+	<cstdlib>
+
